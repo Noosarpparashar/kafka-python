@@ -1,0 +1,4 @@
+Dataframetokafka will put dataframe to kafka in json format.
+You cannot simply run the code and data will  be loaded to kafka topic in json. YOu need to do spark-submit.
+spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.13:3.2.1 dataframe-to-kafka.py
+It is mandatory to pass this package to load data to topic
